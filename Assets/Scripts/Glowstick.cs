@@ -48,7 +48,7 @@ public class Glowstick : MonoBehaviour
         }
 
         // --- Initial Setup ---
-        pointLight.enabled = false;
+        pointLight.enabled = true;
         audioSource.playOnAwake = false;
         objectRenderer.material = new Material(objectRenderer.material);
     }
