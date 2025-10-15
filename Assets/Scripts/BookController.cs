@@ -15,6 +15,8 @@ public class BookController : MonoBehaviour
     private float bobHeight;
     private float angle = 0f;
 
+    public GameObject bookCover;
+
     public void Initialize(Transform center, float radius, float speed, float elev, float bSpeed, float bHeight)
     {
         centerPoint = center;
@@ -38,10 +40,10 @@ public class BookController : MonoBehaviour
             return;
         }
 
-        Material[] materials = bookRenderer.materials;
+        Material[] materials = bookCover.GetComponent<MeshRenderer>().materials;
         // This now generates fully saturated, vibrant colors.
-        materials[coverMaterialIndex].color = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
-        materials[coverMaterialIndex].color = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
+        materials[coverMaterialIndex].color = Color.black; //Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
+        //materials[coverMaterialIndex].color = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
     }
 
     void Update()

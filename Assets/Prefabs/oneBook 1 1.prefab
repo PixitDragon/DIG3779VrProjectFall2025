@@ -66,7 +66,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 297548d0072bce74c9b6c3b2cf1335d2, type: 2}
-  - {fileID: 2100000, guid: a9018518312af8f4eb28c8d4c07b7ff4, type: 2}
+  - {fileID: 2100000, guid: 91313030ad7feff4fb74d41da2ee3962, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -205,3 +205,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coverMaterialIndex: 1
+  bookCover: {fileID: 5795884218194974230}
