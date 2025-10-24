@@ -1,0 +1,13 @@
+I could immidately tell what the problem was when I opened the project: the player is at a normal size scale, but the room is FAR too large if you're playing anything but an ant. I had several immediate thoughts on how to solve this problem:
+ - Make the player bigger to fit the scale of the room
+ - Select everything in the room and reduce it by a percentage size
+
+I did some small testing and set the scale of the player to 200, which fixed the scale and size issue. However, the walls keep dissapearing when I'm looking directly at them, and so do the objects in the room. I feel like this is some sort of render distance issue? Or something with the camera at least
+
+I found the issue! Or at least a way to solve it. I changed the Clipping Planes value in the Main Camera of the player to 1, couldn't see anything, then changed it to 10000000, and you could see the whole room!
+
+
+Buuuuut
+It's probably better to make the room smaller. It's harder to use the editor with giant room.
+
+Scaled it down and it worked, but the colliders don't work except for the floor now. But that sounds like a problem for tomorrow me.
